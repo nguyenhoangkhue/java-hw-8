@@ -2,8 +2,8 @@ package Main;
 
 public class Serial extends Film{
     private int episodes;
-    private double averageTime;
-    public Serial(String id, String title, String genre, String director, String releaseDate, int episodes, double averageTime) {
+    private String averageTime;
+    public Serial(int id, String title, String genre, String director, String releaseDate, int episodes, String averageTime) {
         super(id, title, genre, director, releaseDate);
         this.episodes=episodes;
         this.averageTime=averageTime;
@@ -17,11 +17,15 @@ public class Serial extends Film{
         this.episodes = episodes;
     }
 
-    public double getAverageTime() {
+    public String getAverageTime() {
         return averageTime;
     }
 
-    public void setAverageTime(double averageTime) {
+    public void setAverageTime(String averageTime) {
         this.averageTime = averageTime;
+    }
+    @Override
+    public String toString(){
+        return super.toString()+"-"+episodes+"-"+averageTime;
     }
 }

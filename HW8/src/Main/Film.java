@@ -1,7 +1,7 @@
 package Main;
 
 public class Film {
-    private String id;
+    private int id;
     private String title;
     private String genre;
     private String director;
@@ -10,7 +10,7 @@ public class Film {
     public Film(){
     }
 
-    public Film(String id, String title, String genre, String director, String releaseDate){
+    public Film(int id, String title, String genre, String director, String releaseDate){
         this.id=id;
         this.title=title;
         this.genre=genre;
@@ -18,11 +18,11 @@ public class Film {
         this.releaseDate=releaseDate;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 

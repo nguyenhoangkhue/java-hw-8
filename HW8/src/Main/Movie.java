@@ -1,17 +1,21 @@
 package Main;
 
 public class Movie extends Film{
-    private double time;
-    public Movie(String id, String title, String genre, String director, String releaseDate, double time){
+    private String time;
+    public Movie(int id, String title, String genre, String director, String releaseDate, String time){
         super(id,title,genre,director,releaseDate);
         this.time=time;
     }
 
-    public double getTime() {
+    public String getTime() {
         return time;
     }
 
-    public void setTime(double time) {
+    public void setTime(String time) {
         this.time = time;
+    }
+    @Override
+    public String toString(){
+        return super.toString()+"-"+time;
     }
 }
