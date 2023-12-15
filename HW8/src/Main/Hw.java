@@ -31,7 +31,7 @@ public class Hw {
         }
         System.out.println("\nNhập phim cần tìm theo tiêu đề:");
         String findFilm = sc.nextLine();
-        for (int i = 0; i < arrSerial.size() || i < arrSerial.size(); i++) {
+        for (int i = 0; i < arrSerial.size(); i++) {
             if (arrMovie.get(i).getTitle().equalsIgnoreCase(findFilm))
                 System.out.println(arrMovie.get(i));
             if (arrSerial.get(i).getTitle().equalsIgnoreCase(findFilm))
